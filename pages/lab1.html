@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
 
     <title>Zvit</title>
 </head>
@@ -40,118 +44,145 @@
     <h2 class="text-center">ЛАБОРАТОРНА РОБОТА №1</h2>
     <h4 class="text-center">Тема: ІНКАПСУЛЯЦІЯ. КЛАСИ. ЕКЗЕМПЛЯРИ КЛАСІВ. ОБ’ЄКТНО-ОРІЄНТОВАНИЙ АНАЛІЗ ТА ПРОЕКТУВАННЯ. ДІАГРАМА ПРЕЦЕНДЕНТІВ</h4>
 
-    <div class="container">
-        <div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="nav  nav-pills me-3 sticky-top py-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <ul class="nav nav-pills"></ul>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Характеристика об'єкта автоматизації</a>
-                                <ul class="dropdown-menu" style="margin: 0px;">
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section11">1.1 Об'єкт управління</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section12">1.2. Мета розробки проекту </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section13">1.3. Бізнес-задачі</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section14">1.4. Бізнес-процеси</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section14">1.5 Сценарій дій системи</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Об'єктно-орієнтована декомпозиція</a>
-                                <ul class="dropdown-menu" style="margin: 0px;">
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section11">2.1. Лексичний та семантичний аналіз опису об’єкту управління</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section12">2.2. Об’єктно-орієнтовна декомпозиція предметного середовища </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section13">2.3. Функціональні вимоги замовника</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"  data-bs-toggle="pill" href="#section3">Проектування ПЗ</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Кодування (програмування)</a>
-                                <ul class="dropdown-menu" style="margin: 0px;">
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section11">4.1 Файлова структура проекту</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="dropdown-item nav-link" data-bs-toggle="pill" href="#section12">4.2 Специфікації методів: </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="pill" href="#section5">Впровадження та супроводження ПЗ</a>
-                            </li>
-                        </ul>
+    <div class="container py-5">
+        <div class="row">
+            <div class="nav col-3 flex-column">
+                <div class="section dropdown">
+                    <div class="title d-flex align-items-center">
+                        1. Характеристика об'єкта автоматизації
                     </div>
-                </div>
-                <div class="col col-8">
-                    <div class="tab-content px-4">
-                        <div class="tab-pane fade show active" id="section11">
-                            <h3 class="mb-3">1.1.	Детальний опис предметного середовища (об’єкта управління), що моделюється:</h3>
-                            <img src="../images/classes.png" class="img-fluid" alt="Responsive image">
-                        </div >
-                        <div class="tab-pane fade" id="section12">
-                            <h3 class="mb-3">1.2.	Мета розробки проекту:</h3>
-                            <img src="../images/use_case.png" class="img-fluid" alt="Responsive image">
+                    <div class="content collapse show ms-3">
+                        <div class="subSection">
+                            1.1. Об'єкт управління
                         </div>
-                        <div class="tab-pane fade" id="section13">
-                            <h3 class="mb-3">1.3 Бізнес-задачі, що моделюються в системі, для досягнення мети:</h3>
-                            <img src="../images/use_case.png" class="img-fluid" alt="Responsive image">
+                        <div class="subSection">
+                            1.2. Мета розробки проекту
                         </div>
-                        <div class="tab-pane fade" id="section14">
-                            <h3 class="mb-3">1.4 Бізнес-процеси, що здійснюються в системі:</h3>
-                            <img src="../images/use_case.png" class="img-fluid" alt="Responsive image">
+                        <div class="subSection">
+                            1.3. Бізнес-задачі
                         </div>
-                        <div class="tab-pane fade" id="section15">
-                            <h3 class="mb-3">1.5 Сценарій дій системи:</h3>
-                            <img src="../images/use_case.png" class="img-fluid" alt="Responsive image">
+                        <div class="subSection">
+                            1.4. Бізнес-процеси
                         </div>
-                        <div class="tab-pane fade" id="section21">
-                            <h3 class="mb-3">2.1. Лексичний та семантичний аналіз опису об’єкту управління:</h3>
-                        </div>
-                        <div class="tab-pane fade" id="section22">
-                            <h3 class="mb-3">2.2. Об’єктно-орієнтовна декомпозиція предметного середовища:</h3>
-                            <img src="../images/objects.png" class="img-fluid" alt="Responsive image">
-                        </div>
-                        <div class="tab-pane fade" id="section23">
-                            <h3 class="mb-3">2.3. Функціональні вимоги замовника:</h3>
-                            <img src="../images/use_case.png" class="img-fluid" alt="Responsive image">
-                        </div>
-                        <div class="tab-pane fade" id="section3">
-                            <h3 class="mb-3">3.1. Проектування структури ПЗ</h3>
-                            <img src="../images/classes.png" class="img-fluid" alt="Responsive image">
-                        </div>
-                        <div class="tab-pane fade" id="section41">
-                            <h3 class="mb-3">4.1 Файлова структура проекту:</h3>
-                            <img src="../images/classes.png" class="img-fluid" alt="Responsive image">
-                        </div>
-                        <div class="tab-pane fade" id="section42">
-                            <h3 class="mb-3">4.2 Специфікації методів:</h3>
-                            <img src="../images/classes.png" class="img-fluid" alt="Responsive image">
-                        </div>
-                        <div class="tab-pane fade" id="section5">
-                            <h3 class="mb-3">5 Впровадження та супроводження ПЗ</h3>
-                            <img src="../images/classes.png" class="img-fluid" alt="Responsive image">
+                        <div class="subSection">
+                            1.5 Сценарій дій системи
                         </div>
                     </div>
                 </div>
-              </div>
+                <div class="section dropdown">
+                    <div class="title d-flex align-items-center">
+                        2. Об'єктно-орієнтована декомпозиція
+                    </div>
+                    <div class="content collapse ms-3">
+                        <div class="subSection">
+                            2.1. Об’єктно-орієнтовна декомпозиція предметного середовища
+                        </div>
+                        <div class="subSection">
+                            2.2. Функціональні вимоги замовника
+                        </div>
+                    </div>
+                </div>
+                <div class="section link">
+                    <div class="title d-flex align-items-center">
+                        3. Проектування ПЗ
+                    </div>
+                </div>
+                <div class="section dropdown">
+                    <div class="title d-flex align-items-center">
+                        4. Кодування (програмування)
+                    </div>
+                    <div class="content collapse ms-3">
+                        <div class="subSection">
+                            4.1 Файлова структура проекту
+                        </div>
+                        <div class="subSection">
+                            4.2 Специфікації методів
+                        </div>
+                    </div>
+                </div>
+                <div class="section link">
+                    <div class="title d-flex align-items-center">
+                        5. Впровадження та супроводження ПЗ
+                    </div>
+                </div>
+            </div>
+            <div class="main col px-4">
+                <div class="section collapse show">
+                    <h2 class="text-center">1. Характеристика об'єкта автоматизації</h2>
+                    <div class="subSection collapse show">
+                        <h3 class="mb-3">1.1.	Детальний опис предметного середовища (об’єкта управління), що моделюється:</h3>
+                        <p> Об'єктом автоматизації є застосунок для розподілу задач на проекті в IT-компанії</p>
+                        <p>Даний програмний продукт є дуже насиченим за функціоналом та складним за архітектурою. Цей застосунок розрахований на професійне застосування спеціалістами, більшою мірою, на великих проектах.</p>
+                        <p>Актуальність проблеми розподілу задач на проекті є досить високою для IT компаній, тому було обрано рішення побудувати простий і гнучкий додаток, що дозволить користувачу швидко ознайомитись з функціоналом та використовувати його.</p>
+                        <p>Для цього було взято задані у технічному завданні сутності та опрацьовано їх. Додаток містить робочі панелі для «Employee», «Manager», «Admin». Додаток надає можливість виконувати з панелі «Admin» усі операції з профілями працівників, з панелі «Manager» створювати задачі та проекти, з панелі «Employee» переглядати та надавати статус.</p>
+                    </div>
+                    <div class="subSection collapse">
+                        <h3 class="mb-3">1.2.	Мета розробки проекту:</h3>
+                             <p> 1. Прискорити та полегшити можливість працівникам працювати з задачами</p>    
+                             <p> 2. Побудувати простий і гнучкий додаток, що дозволить користувачу швидко ознайомитись з функціоналом та використовувати його.</p>           
+                            <p>  3. Надати зручний механізм адміністрування системою для PM працівників.</p>
+                            </div>
+                    <div class="subSection collapse">
+                        <h3 class="mb-3">1.3 Бізнес-задачі, що моделюються в системі, для досягнення мети:</h3>
+                        <p> 1. Створення та робота з проектом</p>
+                        <p> 2. Створення та робота з задачами в проекті</p>
+                       
+                    </div>
+                    <div class="subSection collapse">
+                        <h3 class="mb-3">1.4 Бізнес-процеси, що здійснюються в системі:</h3>
+                        <p> 1. Створити новий проект.</p>>
+                        <p> 2. Змінити існуючи проект.</p>
+                        <p> 3. Додати нову задачу в проект.</p>
+                        <p> 4. Змінити існуючу задачу.</p>
+                        <p> 5. Змінити статус задачі</p>
+                    </div>
+                    <div class="subSection collapse">
+                        <h3 class="mb-3">1.5 Сценарій дій системи:</h3>
+                        <ol>
+                            <li>Вхід користувача в систему</li>
+                            <li>Пошук потрібного проекту</li>
+                            <li>Знаходження потрібних задач</li>
+                            <li>Змінювання статусу задачі в залежності від стадії її виконання</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="section collapse">
+                    <h2 class="text-center">2. Об'єктно-орієнтована декомпозиція</h2>
+                    <div class="subSection collapse">
+                        <h3 class="mb-3">2.1. Об’єктно-орієнтовна декомпозиція предметного середовища:</h3>
+                        <img src="../images/objects.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="subSection collapse">
+                        <h3 class="mb-3">2.2. Функціональні вимоги замовника:</h3>
+                        <img src="../images/use_case.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="section collapse">
+                    <h2 class="text-center">3. Проектування ПЗ</h2>
+                    <div class="subSection collapse show">
+                        <h3 class="mb-3">3.1. Проектування структури ПЗ</h3>
+                        <img src="../images/classes.png" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="section collapse">
+                    <h2 class="text-center">4. Кодування (програмування)</h2>
+                    <div class="subSection collapse show">
+                        <h3 class="mb-3">4.1 Файлова структура проекту:</h3>
+                        <img src="../images/VS_solution.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="subSection collapse">
+                        <h3 class="mb-3">4.2 Специфікації методів:</h3>
+                        <img src="../images/Методы.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <div class="section collapse">
+                    <h2 class="text-center mb-3">5. Впровадження та супроводження ПЗ</h2>
+                    <div class="subSection collapse show">
+                        <a href="https://github.com/OlegKarasiov/zvit">Посилання на Git всього проекту</a>
+                        <p><a href="../EXE/ItCompany.exe">.exe файл</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -168,5 +199,58 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".nav .section.dropdown .content.show").parent().addClass("active");
+        $(".nav .section.dropdown").click(function (){
+            if ($(this).find(".content").hasClass("show")) return;
+
+            $(".nav .section.dropdown").removeClass("active");
+            $(this).addClass("active");
+
+            $(".nav .section.dropdown .content.show").collapse("hide");
+            $(this).find(".content").collapse("show");
+        })
+
+        $(".nav .section.dropdown .subSection").click(function (e){
+            e.stopPropagation();
+
+            let subSectionIndex = $(this).index();
+            let sectionIndex = $(this).parents(".section.dropdown").index();
+
+            if (!$(".main .section").eq(sectionIndex).hasClass("show")) {
+                $(".main .section").collapse("hide");
+                $(".main .section").eq(sectionIndex).collapse("show");
+            }
+
+            if (!$(".main .section").eq(sectionIndex).find(".subSection").eq(subSectionIndex).hasClass("show")) {
+                $(".main .section .subSection").collapse("hide");
+                $(".main .section").eq(sectionIndex).find(".subSection").eq(subSectionIndex).collapse("show");
+            }
+        })
+
+        $(".nav .section.link").click(function (e){
+            e.stopPropagation();
+
+            let subSectionIndex = 0;
+            let sectionIndex = $(this).index();
+
+            if (!$(".main .section").eq(sectionIndex).hasClass("show")) {
+                $(".main .section").collapse("hide");
+                $(".main .section").eq(sectionIndex).collapse("show");
+            }
+
+            if (!$(".main .section").eq(sectionIndex).find(".subSection").eq(subSectionIndex).hasClass("show")) {
+                $(".main .section .subSection").collapse("hide");
+                $(".main .section").eq(sectionIndex).find(".subSection").eq(subSectionIndex).collapse("show");
+            }
+        })
+    })
+</script>
 </body>
 </html>

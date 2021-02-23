@@ -1,0 +1,25 @@
+body {
+    overflow-y: scroll;
+}
+
+.nav .section, .nav .section .subSection {
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.nav .section.dropdown .title:after {
+    font-family: 'Material Icons';
+    content: "keyboard_arrow_down";
+    -webkit-font-feature-settings: 'liga';
+    font-size: 20px;
+    transform: rotate(-90deg);
+    transition: 0.3s;
+}
+
+.nav .section.dropdown.active .title:after {
+    transform: rotate(0deg);
+}
+
+.main .collapsing {
+    transition: none;
+}
