@@ -1,7 +1,0 @@
-C:\Users\nCore\source\repos\ItCompany\ItCompany\bin\Debug\ItCompany.exe.config
-C:\Users\nCore\source\repos\ItCompany\ItCompany\bin\Debug\ItCompany.exe
-C:\Users\nCore\source\repos\ItCompany\ItCompany\bin\Debug\ItCompany.pdb
-C:\Users\nCore\source\repos\ItCompany\ItCompany\obj\Debug\ItCompany.csprojAssemblyReference.cache
-C:\Users\nCore\source\repos\ItCompany\ItCompany\obj\Debug\ItCompany.csproj.CoreCompileInputs.cache
-C:\Users\nCore\source\repos\ItCompany\ItCompany\obj\Debug\ItCompany.exe
-C:\Users\nCore\source\repos\ItCompany\ItCompany\obj\Debug\ItCompany.pdb
