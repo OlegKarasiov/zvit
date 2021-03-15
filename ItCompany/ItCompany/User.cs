@@ -10,6 +10,45 @@ namespace ItCompany
         public String Email { get; set; } = "No email";
         public String PasswordHash { get; } = "No Password Hash";
         public Role UserRole { get; } = Role.Employee;
+        private int salary =0;
+
+        public int Salary
+        {
+            get { return salary; }
+            set { salary = value; }
+        }
+
+        public static User operator ++(User user)
+        {
+            user.salary++;
+            return user;
+        }
+        public static User operator +(User user, int add)
+        {
+            user.salary += add;
+            return user;
+        }
+        public static User operator !(User user)
+        {
+            user.salary = 0;
+            return user;
+        }
+        public static bool operator >(User a, User b)
+        {
+            return a.salary > b.salary;
+        }
+        public static bool operator <(User a, User b)
+        {
+            return a.salary < b.salary;
+        }
+        public static bool operator ==(User a, User b)
+        {
+            return a.salary == b.salary;
+        }
+        public static bool operator !=(User a, User b)
+        {
+            return a.salary != b.salary;
+        }
 
         public User() => Console.WriteLine("User " + FirstName + " has been created");
 
