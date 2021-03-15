@@ -9,6 +9,13 @@ namespace ItCompany
 {
     class ITCompany
     {
+        private String name = "NO_NAME_COMPANY";
+        public String Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
         private List<Project> projects;
         private List<User> users;
         private List<Department> departments;
@@ -51,8 +58,6 @@ namespace ItCompany
 
             Console.WriteLine("IT-Company has been created");
         }
-
-
 
         public void AddProject(String name, List<Task> tasks) => projects.Add(new Project(name, tasks));
         public void DeleteProject(int id) => projects.Remove(projects.Find(x => x.ID.Equals(id)));

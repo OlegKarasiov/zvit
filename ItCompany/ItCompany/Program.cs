@@ -16,7 +16,12 @@ namespace ItCompany
             Console.WriteLine(" ");
             Console.WriteLine("\tCreating IT-COMPANY");
 
+            Console.WriteLine();
             var company = new ITCompany();
+            Console.WriteLine("Company name:" + company.Name);
+            company.Name = "IT - MON";
+            Console.WriteLine("Company name:" + company.Name);
+
             Console.ReadLine();
         }
     }
