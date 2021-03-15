@@ -5,9 +5,9 @@ namespace ItCompany
     public class User
     {
         public int ID { get; } = Guid.NewGuid().GetHashCode();
-        public String FirstName { get; } = "No First Name";
-        public String LastName { get; } = "No Last Name";
-        public String Email { get; } = "No email";
+        public String FirstName { get; set; } = "No First Name";
+        public String LastName { get; set; } = "No Last Name";
+        public String Email { get; set; } = "No email";
         public String PasswordHash { get; } = "No Password Hash";
         public Role UserRole { get; } = Role.Employee;
 
