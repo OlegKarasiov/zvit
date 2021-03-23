@@ -16,7 +16,7 @@ namespace ItCompany
             Console.WriteLine(" ");
             Console.WriteLine("\tCreating IT-COMPANY");
 
-            ItCompany itCompany = new ItCompany();
+            IItCompany itCompany = new ItCompany();
 
             Console.WriteLine(" ");
 
