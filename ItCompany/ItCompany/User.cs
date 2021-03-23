@@ -2,7 +2,7 @@
 
 namespace ItCompany
 {
-    public class User
+    public class User : Entity
     {
         public int ID { get; } = Guid.NewGuid().GetHashCode();
         public String FirstName { get; set; } = "No First Name";
@@ -62,5 +62,9 @@ namespace ItCompany
             Console.WriteLine("User " + FirstName + " has been created");
         }
 
+        public override void DisplayName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

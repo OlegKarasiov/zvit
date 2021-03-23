@@ -2,8 +2,10 @@
 
 namespace ItCompany
 {
-    public class Task
+    public class Task : Entity
     {
+        private string v;
+
         public int ID { get; } = Guid.NewGuid().GetHashCode();
         public User AssignedUser { get; set; } = null;
         public String Name { get; set; } = "Untitled";
@@ -19,6 +21,16 @@ namespace ItCompany
             Description = description;
             TaskStatus = taskStatus;
             Console.WriteLine("Task " + Name + " has been created");
+        }
+
+        public Task(string name)
+        {
+            this.Name = name;
+        }
+
+        public override void DisplayName()
+        {
+            throw new NotImplementedException();
         }
     }
 }

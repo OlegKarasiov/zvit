@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 namespace ItCompany
 {
-    public class Department
+    public class Department : Entity
     {
-        public int ID { get; } = Guid.NewGuid().GetHashCode();
         public String Name { get; } = "Untitled";
         public User Head { get; } = null;
         public List<User> Employees { get; } = new List<User>();
@@ -18,6 +17,11 @@ namespace ItCompany
             Head = departmentHead;
             Employees = employees;
             Console.WriteLine("Department "+Name+" has been created");
+        }
+
+        public override void DisplayName()
+        {
+            Console.WriteLine(Name);
         }
     }
 }

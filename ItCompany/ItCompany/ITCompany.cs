@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ItCompany
 {
-    class ITCompany
+    class ItCompany : IItCompany
     {
         private String name = "NO_NAME_COMPANY";
         public String Name
@@ -21,7 +17,7 @@ namespace ItCompany
         private List<Department> departments;
         private List<UserToDepartment> userToDepartments;
 
-        public ITCompany()
+        public ItCompany()
         {
             projects = new List<Project>();
             users = new List<User>();

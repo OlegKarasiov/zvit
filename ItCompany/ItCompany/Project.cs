@@ -1,26 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace ItCompany
 {
-    public class Project
+    public class Project : Entity
     {
         public int ID { get; } = Guid.NewGuid().GetHashCode();
-        public String Name { get; set; } = "Untitled";
+        public string Name { get; set; } = "Untitled";
         public List<Task> Tasks { get; set; } = new List<Task>();
 
-        public Project() => Console.WriteLine("Project "+Name+" has been created\n");
-        public Project(String name)
+        public Project() : base() => Console.WriteLine("Project "+Name+" has been created\n");
+        public Project(String name) : base()
         {
             Name = name;
-            Console.WriteLine("Project " + Name + " has been created\n");
         }
 
-        public Project(String name, List<Task> tasks)
+        public Project(String name, List<Task> tasks) : base()
         {
             Name = name;
             Tasks = tasks;
+            Console.WriteLine("Project " + Name + " has been created\n");
+        }
+
+        public override void DisplayName()
+        {
             Console.WriteLine("Project " + Name + " has been created\n");
         }
     }

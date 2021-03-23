@@ -2,7 +2,7 @@
 
 namespace ItCompany
 {
-    public class UserToDepartment
+    public class UserToDepartment : Entity
     {
         public int ID { get; } = Guid.NewGuid().GetHashCode();
         public User User { get; }
@@ -13,6 +13,11 @@ namespace ItCompany
             User = user;
             Department = department;
             Console.WriteLine("Connection: user " + User.FirstName + " to department "+Department.Name+" has been created");
+        }
+
+        public override void DisplayName()
+        {
+            throw new NotImplementedException();
         }
     }
 }

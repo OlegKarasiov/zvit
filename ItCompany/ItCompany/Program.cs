@@ -16,6 +16,32 @@ namespace ItCompany
             Console.WriteLine(" ");
             Console.WriteLine("\tCreating IT-COMPANY");
 
+            ItCompany itCompany = new ItCompany();
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine("\t=== Testing interfaces ===");
+
+            Console.WriteLine("1. Creating project: ");
+            Entity entity = new Project("Test");
+            Console.WriteLine("ID: " + entity.Id);
+
+            IEntity copy = entity;
+
+            Console.WriteLine("2. Casting Project to Task: ");
+            entity = new Task("Lab 5");
+            Console.WriteLine("Entity is now of type : " + entity.GetType().Name);
+            Console.WriteLine("ID: " + entity.Id);
+
+            Console.WriteLine("3. Entities are equal: " + copy.Equals(entity));
+
+            Console.WriteLine("4. Casting back: ");
+            entity = (Entity)copy;
+            Console.WriteLine("Entity is now of type : " + entity.GetType().Name);
+            Console.WriteLine("ID: " + entity.Id);
+
+            Console.ReadLine();
+
             Console.WriteLine();
             User user1 = new User("Oleg", "Karasiov", "dog@dog.dog", "kjn3@f3f", Role.Employee);
             User user2 = new User("Oleg-Copy", "Karasiov", "dog@dog.dog", "kjn3@f3f", Role.Employee);
